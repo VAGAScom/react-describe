@@ -234,6 +234,7 @@
   margin: 0;
   padding: 16px;
   background-color: hsla(0, 0%, 98%, 1);
+  overflow-x: auto;
 }
 
 .react-describe-output-code {
