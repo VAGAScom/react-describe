@@ -1,0 +1,242 @@
+@import url("https://rsms.me/inter/inter.css");
+
+.react-describe-root {
+  font-family: "Inter", sans-serif;
+  margin: 16px;
+  padding: 32px;
+  box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.2);
+}
+
+@supports (font-variation-settings: normal) {
+  .react-describe-root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+.react-describe-checkbox-input,
+.react-describe-radio-input {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+}
+
+.react-describe-checkbox,
+.react-describe-radio {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+  font-size: 15px;
+  margin: 8px;
+  padding-left: 25px;
+}
+
+.react-describe-checkbox::before,
+.react-describe-radio::before {
+  position: absolute;
+  top: -3px;
+  left: -5px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  background-color: rgb(230, 234, 236);
+}
+
+.react-describe-checkbox::before {
+  border-radius: 9px;
+}
+
+.react-describe-radio::before {
+  border-radius: 50%;
+  transition: background-color 300ms;
+}
+
+.react-describe-checkbox-input:focus + .react-describe-checkbox::after,
+.react-describe-radio-input:focus + .react-describe-radio::after {
+  position: absolute;
+  top: -9px;
+  left: -11px;
+  content: "";
+  width: 37px;
+  height: 37px;
+  background-color: rgba(25, 176, 232, 37%);
+}
+
+.react-describe-checkbox-input:focus + .react-describe-checkbox::after {
+  border-radius: 14px;
+}
+
+.react-describe-radio-input:focus + .react-describe-radio::after {
+  border-radius: 50%;
+}
+
+.react-describe-checkbox > svg {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 16px;
+  stroke: rgb(56, 70, 78);
+  stroke-width: 3px;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.react-describe-checkbox[data-checked="true"] > svg {
+  opacity: 1;
+}
+
+.react-describe-radio[data-checked="true"]::before {
+  background-color: rgb(90, 134, 204);
+}
+
+.react-describe-string-input,
+.react-describe-number-input {
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  height: 42px;
+  background-color: rgb(230, 234, 236);
+  margin-top: 2px;
+  padding: 0 20px;
+}
+
+.react-describe-checkbox {
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  color: rgb(49, 58, 64);
+}
+
+.react-describe-radio,
+.react-describe-string-input,
+.react-describe-number-input {
+  font-size: 15px;
+  color: rgb(56, 70, 78);
+  font-weight: 300;
+}
+
+.react-describe-string-input:focus,
+.react-describe-number-input:focus {
+  outline: none;
+  background-color: hsl(200, 14%, 84%);
+}
+
+.react-describe-string-container,
+.react-describe-number-container,
+.react-describe-bool-container,
+.react-describe-enum-container,
+.react-describe-string-label-container,
+.react-describe-number-label-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.react-describe-string-container,
+.react-describe-number-container,
+.react-describe-bool-container,
+.react-describe-enum-container {
+  padding: 24px;
+}
+
+.react-describe-string-required,
+.react-describe-number-required,
+.react-describe-bool-required,
+.react-describe-enum-required {
+  align-self: flex-end;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-right: 2px;
+}
+
+.react-describe-string-description,
+.react-describe-number-description,
+.react-describe-bool-description,
+.react-describe-enum-description {
+  padding-left: 12px;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  font-style: italic;
+  color: rgb(78, 90, 99);
+}
+
+.react-describe-editor-sidebar-form > :nth-child(2n) {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.react-describe-string-label-text,
+.react-describe-number-label-text,
+.react-describe-enum-label-text {
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: rgb(49, 58, 64);
+}
+
+.react-describe-enum-required-spacing {
+  display: block;
+  height: 18px;
+}
+
+.react-describe-title,
+.react-describe-description {
+  margin: 0;
+}
+
+.react-describe-title {
+  font-size: 52px;
+  font-weight: 900;
+}
+
+.react-describe-description {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.react-describe-editor-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.react-describe-editor-preview {
+  min-width: 370px;
+  flex: 2;
+  overflow-x: auto;
+  border-radius: 2px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 97%);
+}
+
+.react-describe-editor-sidebar {
+  width: 33vw;
+  min-width: 250px;
+  flex: 1;
+  overflow-wrap: break-word;
+  display: flex;
+  align-items: center;
+}
+
+.react-describe-editor-sidebar-form {
+  flex: 1;
+}
+
+.react-describe-output-pre {
+  margin: 0;
+  padding: 16px;
+  background-color: hsla(0, 0%, 98%, 1);
+}
+
+.react-describe-output-code {
+  font-family: SFMono-Regular, Consolas, monospace;
+  white-space: normal;
+}
