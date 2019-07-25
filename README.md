@@ -2,6 +2,10 @@
 
 `React Describe` generates a component playground with editable prop values and a live preview that you can include in your own docs.
 
+<img src="docs/assets/code.png" alt="Code example" width="500">
+
+<img src="docs/assets/playground.png" alt="Playground example" width="500">
+
 | Table of Contents                     |
 | :------------------------------------ |
 | [Runnable example](#runnable-example) |
