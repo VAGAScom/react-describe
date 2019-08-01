@@ -60,7 +60,8 @@ export default function Button({ label, disabled, size, borderRadius }) {
         backgroundColor: "rebeccapurple",
         color: "#fff",
         border: "none",
-        borderRadius
+        borderRadius,
+        opacity: disabled ? 0.5 : 1
       }}
       disabled={disabled}
     >
