@@ -1,6 +1,6 @@
 {
   "name": "react-describe",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An accessible React playground on top of react-docgen.",
   "repository": "https://github.com/VAGAScom/react-describe",
   "author": "Charbel Rami",
