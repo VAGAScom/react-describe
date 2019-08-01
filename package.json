@@ -5,7 +5,7 @@
   "repository": "https://github.com/VAGAScom/react-describe",
   "author": "Charbel Rami",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "peerDependencies": {
     "react": "^16.8.6"
   },
