@@ -31,9 +31,14 @@
     "webpack-merge": "^4.2.1"
   },
   "main": "dist/react-describe.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "fix": "./node_modules/.bin/eslint src/*.js --fix",
     "watch": "webpack --watch --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "prepare": "yarn build"
   }
 }
