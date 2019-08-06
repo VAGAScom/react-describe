@@ -6,16 +6,17 @@
 
 <img src="docs/assets/playground.png" alt="Playground example" width="500">
 
-| Table of Contents                     |
-| :------------------------------------ |
-| [Runnable example](#runnable-example) |
-| [Installation](#installation)         |
-| [Usage](#usage)                       |
-| [Licensing](#licensing)               |
+| Table of Contents                       |
+| :-------------------------------------- |
+| [Runnable examples](#runnable-examples) |
+| [Installation](#installation)           |
+| [Usage](#usage)                         |
+| [Licensing](#licensing)                 |
 
-## Runnable example
+## Runnable examples
 
-- [On CodeSandbox](https://codesandbox.io/s/react-describe-example-cw9b8)
+- [Basic](https://codesandbox.io/s/react-describe-example-cw9b8)
+- [Gatsby](https://codesandbox.io/s/react-describe-gatsby-example-6x1qw)
 
 ## Installation
 
